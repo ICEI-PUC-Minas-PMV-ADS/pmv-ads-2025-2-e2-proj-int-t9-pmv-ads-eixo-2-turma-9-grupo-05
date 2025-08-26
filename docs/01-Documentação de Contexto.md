@@ -1,43 +1,65 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O crescente aumento na produção de resíduos sólidos representa um dos maiores desafios ambientais da atualidade. Muitas cidades ainda enfrentam dificuldades em monitorar e gerenciar de forma eficiente a coleta, a pesagem e a destinação adequada dos lixos produzidos diariamente. A ausência de um controle automatizado e integrado dificulta o acompanhamento dos processos, gera desperdício de recursos e compromete iniciativas de reciclagem e preservação ambiental. Diante desse cenário, o projeto propõe o desenvolvimento de uma aplicação backend voltada para o monitoramento de pesagem de resíduos. A aplicação será responsável por realizar consultas periódicas, verificar se houve novas pesagens, identificar o tipo de lixo coletado e enviar essas informações a um servidor centralizado. Dessa forma, será possível registrar dados de maneira automatizada, precisa e acessível, contribuindo para a construção de relatórios e indicadores ambientais. O objetivo principal é oferecer uma solução tecnológica que auxilie o poder público, empresas de gestão de resíduos e cooperativas de reciclagem na tomada de decisão, promovendo maior eficiência no processo de coleta seletiva e gestão sustentável.
+
+A justificativa do projeto está diretamente alinhada com os Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas, em especial o ODS 12 (Consumo e Produção Responsáveis) e o ODS 13 (Ação Contra a Mudança Global do Clima), que destacam a importância da redução de impactos ambientais e da promoção de práticas de reciclagem.
+
+O público-alvo deste sistema engloba prefeituras, empresas de limpeza urbana, cooperativas de catadores e organizações ambientais que necessitam de uma ferramenta confiável para monitorar e otimizar o ciclo de gerenciamento de resíduos.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O aumento da produção de resíduos urbanos tem gerado dificuldades para prefeituras, empresas de coleta e cooperativas de reciclagem, que muitas vezes não têm informações precisas sobre a quantidade e o tipo de lixo coletado. Sem esse controle, torna-se difícil planejar a coleta, incentivar a reciclagem e avaliar o impacto ambiental, prejudicando a eficiência dos processos de gestão de resíduos.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Desenvolver um software que permita organizar e registrar de forma eficiente os dados sobre a pesagem e o tipo de resíduos coletados, contribuindo para melhorar a gestão de lixo e incentivar práticas de reciclagem.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Objetivos Específicos
+
+Identificar os tipos de resíduos mais comuns e registrar suas quantidades.
+
+Criar uma forma de organizar e armazenar os dados de pesagem de lixo para fácil consulta e análise.
+
+Fornecer informações que auxiliem na tomada de decisões por prefeituras, empresas de coleta e cooperativas de reciclagem.
+
 
 ## Justificativa
 
-Explique de forma clara a relevância da aplicação escolhida, justificando os objetivos específicos e os aspectos do software que serão aprofundados, e quantifique o impacto do problema com dados concretos (números, percentuais, indicadores) obtidos por bases oficiais ou outras fontes confiáveis, sempre citadas no padrão ABNT (no formato [Numérico] ou (AUTOR, ANO)).
+endo que a maior parte do reaproveitamento é realizada por catadores informais . Além disso, 39% dos resíduos coletados foram destinados de forma inadequada, incluindo lixões e aterros irregulares .
 
-**Relacione o problema aos Objetivos de Desenvolvimento Sustentável (ODS), indicando quais ODS e subobjetivos são atendidos e descrevendo como o projeto contribui para cada um deles, garantindo coerência entre o impacto mensurado e as metas selecionadas.**
+Esse cenário evidencia a necessidade de soluções que aprimorem o monitoramento e a gestão dos resíduos, promovendo a eficiência na coleta seletiva e incentivando práticas sustentáveis. A aplicação proposta visa contribuir para a melhoria desse processo, oferecendo uma ferramenta que permita o acompanhamento preciso da pesagem e classificação dos resíduos, facilitando a tomada de decisões por parte dos gestores públicos e privados.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Objetivos Específicos:
+
+Desenvolver um sistema de registro e monitoramento da pesagem dos resíduos coletados.
+
+Implementar funcionalidades que permitam a classificação dos resíduos por tipo (orgânico, reciclável, rejeito).
+
+Integrar a aplicação com bancos de dados existentes para otimizar o fluxo de informações.
+
+Criar relatórios e dashboards que auxiliem na análise e planejamento das ações de gestão de resíduos.
+
+Aspectos do Software a Serem Aprofundados:
+
+Interface de Usuário (UI): Desenvolvimento de uma interface intuitiva e acessível para os usuários finais.
+
+Segurança da Informação: Implementação de medidas para garantir a proteção dos dados coletados e processados.
+
+Escalabilidade: Arquitetura do sistema que permita a expansão conforme o aumento da demanda e volume de dados.
+
+Integração com Sistemas Legados: Capacidade de integração com plataformas já utilizadas pelos órgãos responsáveis pela gestão de resíduos.
+
+Contribuição para os ODS:
+
+ODS 11 – Cidades e Comunidades Sustentáveis: A aplicação contribuirá para a gestão eficiente dos resíduos urbanos, promovendo ambientes urbanos mais sustentáveis e resilientes.
+
+ODS 12 – Consumo e Produção Responsáveis: Ao incentivar a reciclagem e o reaproveitamento de materiais, o projeto apoia práticas de consumo e produção mais responsáveis.
+
+ODS 13 – Ação Contra a Mudança Global do Clima: A redução do desperdício e o aumento da reciclagem contribuem para a diminuição das emissões de gases de efeito estufa, auxiliando no combate às mudanças climáticas.
+
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo da aplicação inclui profissionais que atuam na gestão e coleta de resíduos urbanos, como funcionários de prefeituras, empresas de limpeza urbana e cooperativas de reciclagem. Esses usuários geralmente possuem conhecimentos básicos ou intermediários em informática e navegação em sistemas digitais, mas podem não ter experiência específica em softwares de monitoramento de resíduos.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Além disso, eles costumam atuar em equipes hierarquizadas, em que o acesso à informação precisa ser rápido e confiável para auxiliar na tomada de decisão. Por esse motivo, a aplicação deve ser intuitiva e de fácil compreensão, garantindo que usuários com diferentes níveis de familiaridade tecnológica consigam utilizá-la de maneira eficiente.
+
