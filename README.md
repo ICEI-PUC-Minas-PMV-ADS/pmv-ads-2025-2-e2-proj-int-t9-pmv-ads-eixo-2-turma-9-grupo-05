@@ -6,7 +6,9 @@
 
 `2º semestre/2025`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto consiste no desenvolvimento de uma aplicação voltada para a gestão e incentivo à reciclagem. O sistema conta com um back-end que coleta periodicamente dados de pesagem de materiais recicláveis, armazenando-os em tempo real no banco de dados Firebase. Dessa forma, é possível acompanhar o volume de resíduos coletados de maneira prática e organizada, oferecendo um histórico acessível para consultas futuras.
+
+Além disso, a aplicação disponibiliza uma página simples e intuitiva que, a partir da localização do usuário, exibe os pontos de reciclagem mais próximos, permitindo também a filtragem por tipo de material aceito. O objetivo é facilitar o descarte correto de resíduos, apoiar cooperativas e cidadãos no processo de reciclagem e contribuir para práticas mais sustentáveis dentro da comunidade.
 
 ## Integrantes
 
