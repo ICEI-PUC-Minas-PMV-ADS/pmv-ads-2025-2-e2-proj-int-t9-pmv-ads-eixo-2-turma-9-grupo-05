@@ -2,7 +2,7 @@
 
 `Tecnólogo em Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Desenvolvimento de uma Aplicação Interativa`
 
 `2º semestre/2025`
 
