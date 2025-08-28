@@ -53,16 +53,27 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-001| O sistema deve coletar automaticamente os dados de pesagem dos materiais em intervalos de tempo pré-definidos  | ALTA | 
+|RF-002| O sistema deve enviar os dados de pesagem coletados para o banco de dados Firebase sempre que ocorrer atualização   | ALTA |
+|RF-003| A aplicação deve permitir que o usuário visualize um histórico das pesagens registradas | MÉDIA |
+|RF-004| A aplicação deve disponibilizar uma página que obtenha a localização atual do usuário (mediante permissão). | ALTA |
+|RF-005| A aplicação deve exibir os pontos de reciclagem mais próximos com base na localização do usuário. | ALTA |
+|RF-006| A aplicação deve permitir que o usuário filtre os pontos de reciclagem por tipo de material aceito (ex: plástico, vidro, papel, metal). | MÉDIA |
+|RF-007| O sistema deve gerar alertas/notificações quando um novo ponto de reciclagem for adicionado próximo à localização do usuário. | BAIXA |
+|RF-008| A aplicação deve permitir que o usuário cadastre manualmente um novo ponto de reciclagem, informando dados como endereço, tipo de material aceito e horário de funcionamento. | MÉDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RF-001| A aplicação deve ser responsiva e adaptada a diferentes dispositivos (desktop e mobile).  | MÉDIA | 
+|RF-002| O sistema deve ter disponibilidade mínima de 99% para garantir acesso contínuo.   | ALTA |
+|RF-003| O tempo de resposta para exibir pontos de reciclagem próximos não deve exceder 3 segundos. | ALTA |
+|RF-004| O sistema deve armazenar os dados de forma segura no Firebase, garantindo integridade e consistência. | ALTA |
+|RF-005| A aplicação deve seguir boas práticas de privacidade ao solicitar e utilizar a localização do usuário. | ALTA |
+|RF-006| O sistema deve ser escalável, permitindo aumento no número de usuários e pontos de reciclagem sem perda de desempenho. | MÉDIA |
+|RF-007| O sistema deve ter logs de funcionamento para facilitar auditorias e manutenção. | MÉDIA |
+|RF-008| A interface deve ser intuitiva, permitindo que usuários sem conhecimento técnico consigam acessar as principais funções. | MÉDIA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
