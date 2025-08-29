@@ -10,6 +10,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05/blob/main/src/personas/thomas.jpg" alt="Persona1"/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05/blob/main/src/personas/carla.jpg" alt="Persona2"/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05/blob/main/src/personas/luisa.jpg" alt="Persona3"/>
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
