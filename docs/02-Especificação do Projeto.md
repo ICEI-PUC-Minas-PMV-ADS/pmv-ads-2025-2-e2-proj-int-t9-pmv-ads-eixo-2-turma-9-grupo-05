@@ -38,15 +38,13 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Carla      | Acessar métricas confiáveis e consolidadas     | Mostrar o impacto real das ações da ONG e dos parceiros         |
 | Carla      | Indicar pontos de reciclagem parceiros no mapa | Engajar a comunidade e facilitar o acesso aos locais de entrega |
 | Carla      | Compartilhar resultados em campanhas           | Ampliar a credibilidade da ONG e atrair mais apoiadores         |
-| EU COMO... | QUERO/PRECISO...                                      | PARA...                                                 |
-| ---------- | ----------------------------------------------------- | ------------------------------------------------------- |
+         
+| ---------- | ----------------------------------------------------- |------------------------------------------------------- |
 | Luísa      | Ver pontos de reciclagem próximos à minha localização | Saber facilmente onde levar meus recicláveis            |
 | Luísa      | Saber o que cada ponto aceita                         | Evitar perder tempo indo a locais errados               |
 | Luísa      | Acompanhar métricas coletivas da cidade               | Sentir que faço parte de um impacto maior na comunidade |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
-| EU COMO... | QUERO/PRECISO...                                      | PARA...   
+
 
 
 
