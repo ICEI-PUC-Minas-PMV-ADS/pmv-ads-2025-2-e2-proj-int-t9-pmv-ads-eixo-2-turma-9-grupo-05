@@ -34,6 +34,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
 |Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+| EU COMO... | QUERO/PRECISO...                                      | PARA...                                                                                   |
+| ---------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Ricardo    | Ter relatórios consolidados de reciclagem automáticos | Garantir transparência e confiança nos resultados apresentados à diretoria e investidores |
+| Ricardo    | Comparar dados de diferentes unidades                 | Saber quais áreas estão sendo mais eficientes e onde é preciso melhorar                   |
+| Ricardo    | Compartilhar dashboards públicos de impacto           | Reforçar a imagem sustentável da empresa e engajar a comunidade                           |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
