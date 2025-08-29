@@ -13,7 +13,7 @@ Além disso, a aplicação disponibiliza uma página simples e intuitiva que, a 
 ## Integrantes
 
 * DIOGO LIBERATO JÓIA MARIANO
-* Nome completo do aluno 2
+* GABRIEL REZENDE DA SILVA MAIA
 * Nome completo do aluno 3
 * Nome completo do aluno 4
 
