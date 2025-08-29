@@ -43,6 +43,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Luísa      | Ver pontos de reciclagem próximos à minha localização | Saber facilmente onde levar meus recicláveis            |
 | Luísa      | Saber o que cada ponto aceita                         | Evitar perder tempo indo a locais errados               |
 | Luísa      | Acompanhar métricas coletivas da cidade               | Sentir que faço parte de um impacto maior na comunidade |
+|--------------------|------------------------------------|----------------------------------------|
+|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
+|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+| EU COMO... | QUERO/PRECISO...                                      | PARA...   
 
 
 
