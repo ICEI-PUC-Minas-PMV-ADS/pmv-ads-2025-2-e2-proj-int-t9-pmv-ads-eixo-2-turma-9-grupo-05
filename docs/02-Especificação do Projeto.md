@@ -28,35 +28,18 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:             |
-| ---------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Tomas    | Ter relatórios consolidados de reciclagem automáticos | Garantir transparência e confiança nos resultados apresentados à diretoria e investidores |
-| Tomas    | Comparar dados de diferentes unidades                 | Saber quais áreas estão sendo mais eficientes e onde é preciso melhorar                   |
-| Tomas    | Compartilhar dashboards públicos de impacto           | Reforçar a imagem sustentável da empresa e engajar a comunidade                           |
-| EU COMO... | QUERO/PRECISO...                               | PARA...                                                         |
-| ---------- | ---------------------------------------------- | --------------------------------------------------------------- |
-| Carla      | Acessar métricas confiáveis e consolidadas     | Mostrar o impacto real das ações da ONG e dos parceiros         |
-| Carla      | Indicar pontos de reciclagem parceiros no mapa | Engajar a comunidade e facilitar o acesso aos locais de entrega |
-| Carla      | Compartilhar resultados em campanhas           | Ampliar a credibilidade da ONG e atrair mais apoiadores         |
-         
-| ---------- | ----------------------------------------------------- |------------------------------------------------------- |
-| Luísa      | Ver pontos de reciclagem próximos à minha localização | Saber facilmente onde levar meus recicláveis            |
-| Luísa      | Saber o que cada ponto aceita                         | Evitar perder tempo indo a locais errados               |
-| Luísa      | Acompanhar métricas coletivas da cidade               | Sentir que faço parte de um impacto maior na comunidade |
-|--------------------|------------------------------------|----------------------------------------|
-
-
-
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
+Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+| Persona   | Necessidade                                           | Objetivo                                                               |
+|-----------|-------------------------------------------------------|-------------------------------------------------------------------------|
+| Tomas     | Ter relatórios consolidados de reciclagem automáticos | Garantir transparência e confiança nos resultados apresentados à diretoria e investidores |
+| Tomas     | Comparar dados de diferentes unidades                 | Saber quais áreas estão sendo mais eficientes e onde é preciso melhorar |
+| Tomas     | Compartilhar dashboards públicos de impacto           | Reforçar a imagem sustentável da empresa e engajar a comunidade |
+| Carla     | Acessar métricas confiáveis e consolidadas            | Mostrar o impacto real das ações da ONG e dos parceiros |
+| Carla     | Indicar pontos de reciclagem parceiros no mapa        | Engajar a comunidade e facilitar o acesso aos locais de entrega |
+| Carla     | Compartilhar resultados em campanhas                  | Ampliar a credibilidade da ONG e atrair mais apoiadores |
+| Luísa     | Ver pontos de reciclagem próximos à minha localização | Saber facilmente onde levar meus recicláveis |
+| Luísa     | Acompanhar métricas coletivas da cidade               | Sentir que faço parte de um impacto maior na comunidade |
+| Luísa     | Saber o que cada ponto aceita                         | Evitar perder tempo indo a locais errados |
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
