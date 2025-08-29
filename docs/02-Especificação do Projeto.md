@@ -31,14 +31,23 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
-| EU COMO... | QUERO/PRECISO...                                      | PARA...                                                                                   |
+                                                                                |
 | ---------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Ricardo    | Ter relatórios consolidados de reciclagem automáticos | Garantir transparência e confiança nos resultados apresentados à diretoria e investidores |
-| Ricardo    | Comparar dados de diferentes unidades                 | Saber quais áreas estão sendo mais eficientes e onde é preciso melhorar                   |
-| Ricardo    | Compartilhar dashboards públicos de impacto           | Reforçar a imagem sustentável da empresa e engajar a comunidade                           |
+| Tomas    | Ter relatórios consolidados de reciclagem automáticos | Garantir transparência e confiança nos resultados apresentados à diretoria e investidores |
+| Tomas    | Comparar dados de diferentes unidades                 | Saber quais áreas estão sendo mais eficientes e onde é preciso melhorar                   |
+| Tomas    | Compartilhar dashboards públicos de impacto           | Reforçar a imagem sustentável da empresa e engajar a comunidade                           |
+| EU COMO... | QUERO/PRECISO...                               | PARA...                                                         |
+| ---------- | ---------------------------------------------- | --------------------------------------------------------------- |
+| Carla      | Acessar métricas confiáveis e consolidadas     | Mostrar o impacto real das ações da ONG e dos parceiros         |
+| Carla      | Indicar pontos de reciclagem parceiros no mapa | Engajar a comunidade e facilitar o acesso aos locais de entrega |
+| Carla      | Compartilhar resultados em campanhas           | Ampliar a credibilidade da ONG e atrair mais apoiadores         |
+| EU COMO... | QUERO/PRECISO...                                      | PARA...                                                 |
+| ---------- | ----------------------------------------------------- | ------------------------------------------------------- |
+| Luísa      | Ver pontos de reciclagem próximos à minha localização | Saber facilmente onde levar meus recicláveis            |
+| Luísa      | Saber o que cada ponto aceita                         | Evitar perder tempo indo a locais errados               |
+| Luísa      | Acompanhar métricas coletivas da cidade               | Sentir que faço parte de um impacto maior na comunidade |
+
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
