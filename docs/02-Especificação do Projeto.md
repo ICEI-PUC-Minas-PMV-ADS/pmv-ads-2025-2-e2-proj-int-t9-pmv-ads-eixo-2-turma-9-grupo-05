@@ -28,10 +28,7 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-                                                                                |
+Com base na análise das personas forma identificadas as seguintes histórias de usuários:             |
 | ---------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | Tomas    | Ter relatórios consolidados de reciclagem automáticos | Garantir transparência e confiança nos resultados apresentados à diretoria e investidores |
 | Tomas    | Comparar dados de diferentes unidades                 | Saber quais áreas estão sendo mais eficientes e onde é preciso melhorar                   |
