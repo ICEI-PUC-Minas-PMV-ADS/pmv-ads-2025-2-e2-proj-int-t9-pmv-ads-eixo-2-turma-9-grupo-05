@@ -44,6 +44,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-006| A aplicação deve permitir que o usuário filtre os pontos de reciclagem por tipo de material aceito (ex: plástico, vidro, papel, metal). | MÉDIA |
 |RF-007| O sistema deve gerar alertas/notificações quando um novo ponto de reciclagem for adicionado próximo à localização do usuário. | BAIXA |
 |RF-008| A aplicação deve permitir que o usuário cadastre manualmente um novo ponto de reciclagem, informando dados como endereço, tipo de material aceito e horário de funcionamento. | MÉDIA |
+|RF-009| O sistema deve permitir a geração automática de relatórios consolidados de reciclagem em diferentes formatos (PDF, Excel) para facilitar a apresentação dos dados. | Alta |
+|RF-010| A aplicação deve disponibilizar métricas coletivas de reciclagem (ex: quantidade total reciclada pela comunidade/cidade). | MÉDIA |
+|RF-011| A aplicação deve permitir que o usuário receba notificações sobre campanhas e eventos de reciclagem promovidos por ONGs ou empresas parceiras. | BAIXA |
+|RF-012| O sistema deve oferecer ao usuário um guia interativo com informações sobre quais tipos de materiais podem ser reciclados e onde entregá-los. | MÉDIA |
 
 ### Requisitos não Funcionais
 
@@ -57,6 +61,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-006| O sistema deve ser escalável, permitindo aumento no número de usuários e pontos de reciclagem sem perda de desempenho. | MÉDIA |
 |RF-007| O sistema deve ter logs de funcionamento para facilitar auditorias e manutenção. | MÉDIA |
 |RF-008| A interface deve ser intuitiva, permitindo que usuários sem conhecimento técnico consigam acessar as principais funções. | MÉDIA |
+|RF-009| Os relatórios gerados pelo sistema devem manter padronização visual e clareza na apresentação dos dados. | MÉDIA |
+|RF-010| O sistema deve ser compatível com diferentes sistemas operacionais móveis (Android e iOS), garantindo acesso pelo celular. | MÉDIA |
+|RF-011| A aplicação deve suportar personalização de notificações, permitindo que o usuário escolha quais tipos de alertas deseja receber. | MÉDIA |
+|RF-012| O sistema deve garantir acessibilidade, incluindo contraste adequado, textos alternativos e navegação simplificada. | MÉDIA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
