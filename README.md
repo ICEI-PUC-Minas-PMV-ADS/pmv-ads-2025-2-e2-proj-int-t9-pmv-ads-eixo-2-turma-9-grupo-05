@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# EcoTrash
 
 `Tecnólogo em Análise e Desenvolvimento de Sistemas`
 
