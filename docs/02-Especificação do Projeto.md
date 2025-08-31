@@ -89,9 +89,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Deve ser desenvolvido um módulo de backend        |
-|03| Deve ter o SQL como Banco de Dados        |
+|03| O banco de dados utilizado será SQL (ex.: SQL Server        |
 |04| O sistema deverá operar apenas em ambiente online, não sendo prevista funcionalidade offline   |
-|05| O acesso ao sistema deve ocorrer somente via navegador   |
+|05| O acesso ao sistema ocorrerá exclusivamente via navegador web   |
 
 
 
