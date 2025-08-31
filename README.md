@@ -12,10 +12,11 @@ Além disso, a aplicação disponibiliza uma página simples e intuitiva que, a 
 
 ## Integrantes
 
+* ALVARO AUGUSTO SILVA LIMA
 * DIOGO LIBERATO JÓIA MARIANO
+* FLÁVIA LAGES DE SOUZA RAMOS
 * GABRIEL REZENDE DA SILVA MAIA
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* VINÍCIUS PEREIRA SILVA
 
 ## Orientador
 
