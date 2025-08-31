@@ -37,7 +37,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| O sistema deve coletar automaticamente os dados de pesagem dos materiais em intervalos de tempo pré-definidos  | ALTA | 
-|RF-002| O sistema deve enviar os dados de pesagem coletados para o banco de dados Firebase sempre que ocorrer atualização   | ALTA |
+|RF-002| O sistema deve enviar os dados de pesagem coletados para o banco de dados SQL sempre que ocorrer atualização   | ALTA |
 |RF-003| A aplicação deve permitir que o usuário visualize um histórico das pesagens registradas | MÉDIA |
 |RF-004| A aplicação deve disponibilizar uma página que obtenha a localização atual do usuário (mediante permissão). | ALTA |
 |RF-005| A aplicação deve exibir os pontos de reciclagem mais próximos com base na localização do usuário. | ALTA |
@@ -56,7 +56,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| A aplicação deve ser responsiva e adaptada a diferentes dispositivos (desktop e mobile).  | MÉDIA | 
 |RF-002| O sistema deve ter disponibilidade mínima de 99% para garantir acesso contínuo.   | ALTA |
 |RF-003| O tempo de resposta para exibir pontos de reciclagem próximos não deve exceder 3 segundos. | ALTA |
-|RF-004| O sistema deve armazenar os dados de forma segura no Firebase, garantindo integridade e consistência. | ALTA |
+|RF-004| O sistema deve armazenar os dados de forma segura Através do SQL, garantindo integridade e consistência. | ALTA |
 |RF-005| A aplicação deve seguir boas práticas de privacidade ao solicitar e utilizar a localização do usuário. | ALTA |
 |RF-006| O sistema deve ser escalável, permitindo aumento no número de usuários e pontos de reciclagem sem perda de desempenho. | MÉDIA |
 |RF-007| O sistema deve ter logs de funcionamento para facilitar auditorias e manutenção. | MÉDIA |
@@ -88,7 +88,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| Deve ser desenvolvido um módulo de backend        |
+|03| Deve ter o SQL como Banco de Dados        |
+|04| O sistema deverá operar apenas em ambiente online, não sendo prevista funcionalidade offline   |
+|05| O acesso ao sistema deve ocorrer somente via navegador   |
+
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
