@@ -16,7 +16,6 @@ Além disso, a aplicação disponibiliza uma página simples e intuitiva que, a 
 * DIOGO LIBERATO JÓIA MARIANO
 * FLÁVIA LAGES DE SOUZA RAMOS
 * GABRIEL REZENDE DA SILVA MAIA
-* VINÍCIUS PEREIRA SILVA
 
 ## Orientador
 
