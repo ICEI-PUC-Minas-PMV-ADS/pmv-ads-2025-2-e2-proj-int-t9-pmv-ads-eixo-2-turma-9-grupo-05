@@ -6,13 +6,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-<img width="700" height="647" alt="diagrama_classes_residuos_bonito" src="https://github.com/user-attachments/assets/01bb7057-0116-4649-bbe5-98abf871b507" />
-
-- `Usuário` acessa e gera Relatório.
-- `Coletor` realiza Coleta.
-- `Coleta` agrupa várias Pesagens.
-- `Pesagem` está vinculada a um Resíduo.
-- `Relatório` utiliza dados de Coletas e Pesagens para gerar indicadores.
+![Diagrama de Classes](docs/diagrama_classes.png)
 
 ## Modelo ER (Projeto Conceitual)
 
