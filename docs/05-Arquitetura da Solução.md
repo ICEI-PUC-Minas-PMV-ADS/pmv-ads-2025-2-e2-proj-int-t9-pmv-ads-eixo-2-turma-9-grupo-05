@@ -7,7 +7,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-![Diagrama de Classes](diagrama_classes.png)
+![Diagrama de Classes](img/diagrama_classes.png
 
 - `Usuário` acessa e gera Relatório.
 - `Coletor` realiza Coleta.
