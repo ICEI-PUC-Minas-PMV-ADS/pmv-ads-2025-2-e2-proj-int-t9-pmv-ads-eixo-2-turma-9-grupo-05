@@ -4,9 +4,17 @@
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
+
 ## Diagrama de Classes
 
 ![Diagrama de Classes](docs/diagrama_classes.png)
+
+- `Usuário` acessa e gera Relatório.
+- `Coletor` realiza Coleta.
+- `Coleta` agrupa várias Pesagens.
+- `Pesagem` está vinculada a um Resíduo.
+- `Relatório` utiliza dados de Coletas e Pesagens para gerar indicadores.
+
 
 ## Modelo ER (Projeto Conceitual)
 
