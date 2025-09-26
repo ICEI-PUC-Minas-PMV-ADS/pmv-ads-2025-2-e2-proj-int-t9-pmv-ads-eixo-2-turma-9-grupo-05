@@ -8,64 +8,143 @@ Um plano de teste de usabilidade deverá conter:
 
 Antes de iniciar os testes, é essencial definir o que se deseja avaliar na usabilidade do sistema. 
 Alguns exemplos de objetivos são:
-- Verificar se os usuários conseguem concluir tarefas essenciais sem dificuldades.
-- Identificar barreiras na navegação e interação com o sistema.
-- Avaliar a eficiência e a satisfação do usuário ao utilizar a interface.
-- Testar a acessibilidade para diferentes perfis de usuários.
+- Verificar se os usuários conseguem registrar corretamente as pesagens de materiais recicláveis e não recicláveis.
+- Avaliar a clareza da interface de interação com a API (ex: dashboard, endpoints ou aplicativo front-end conectado).
+- Identificar barreiras na navegação, compreensão de mensagens de erro e interação com os dados.
+- Avaliar a eficiência no envio, consulta e interpretação dos dados registrados.
+- Testar a acessibilidade e facilidade de uso para diferentes perfis de usuários (operadores de coleta, gestores de usina de reciclagem, usuários iniciantes em tecnologia).
 
 ## Seleção dos participantes
 
 Para garantir que o teste reflita o uso real do sistema, escolha participantes representativos do público-alvo.
 
 **Critérios para selecionar participantes:**
-- Perfis variados (experientes e iniciantes no sistema).
+- Perfis variados (operadores, gestores, iniciantes e avançados).  
 - Diferentes níveis de familiaridade com tecnologia.
-- Pessoas com necessidades especiais (se aplicável).
+- Inclusão de pessoas com necessidades especiais (se aplicável). 
 
 **Quantidade recomendada:**
 Mínimo: 5 participantes.
 Ideal: Entre 8 e 12 para maior diversidade.
 
-## Definição de cenários de teste
+## Cenários de Teste
 
-Os cenários representam tarefas reais que os usuários executam no sistema. Neste projeto, cada grupo deverá definir, no mínimo, **CINCO cenários para a aplicação** e cada cenário deve incluir:
+**Cenário 1 – Registro de Pesagem**
 
-- Objetivo: O que será avaliado.
-- Contexto: A situação que leva o usuário a interagir com o sistema.
-- Tarefa: A ação que o usuário deve realizar.
-- Critério de sucesso: Como determinar se a tarefa foi concluída corretamente.
+**Objetivo:**  Avaliar a facilidade no registro de uma nova pesagem.
 
-**Exemplo: Cenário 1**
-
-**Objetivo:** Avaliar a facilidade e eficiência do usuário em pesquisar, adicionar um produto ao carrinho e finalizar a compra sem dificuldades.
-
-**Contexto:** O usuário deseja comprar um notebook para uso pessoal. Para isso, ele deverá entrar no site www.compras.com.br para buscar opções disponíveis, comparar preços, adicionar o produto ao carrinho e finalizar a compra com pagamento via cartão de crédito.
+**Contexto:** O operador precisa registrar 30kg de plástico coletado em um bairro. 
 
 **Tarefa(s):** 
-- Acessar o site e localizar a barra de pesquisa.
-- Pesquisar por "notebook" e utilizar os filtros para refinar a busca (exemplo: marca, preço, processador).
-- Escolher um dos notebooks listados e acessar a página do produto.
-- Adicionar o produto ao carrinho.
-- Finalizar a compra, preenchendo os dados de pagamento e endereço de entrega.
-- Confirmar a transação e verificar a tela de pedido concluído.
-
+- Acessar a interface da API/aplicação.
+- Localizar a opção de **inserir pesagem**.  
+- Preencher os dados: material = plástico, peso = 30kg, local = Bairro X.
+- Enviar o registro.
+  
 **Critério(s) de Sucesso(s):**
-- O usuário consegue encontrar e filtrar os produtos sem dificuldades.
-- O produto é adicionado ao carrinho corretamente.
-- O usuário consegue preencher as informações de pagamento e entrega sem erros.
-- A compra é finalizada com sucesso, e o usuário visualiza a confirmação do pedido.
-- Todo o processo ocorre em menos de 5 minutos, sem necessidade de assistência.
+- Registro aceito e confirmado pelo sistema em até 2 minutos.  
+- Usuário compreende as mensagens de feedback.
+
+  
+---
+
+**Cenário 2 – Classificação de Materiais**
+
+- **Objetivo:** Avaliar se a interface diferencia corretamente recicláveis e não recicláveis.
+    
+- **Contexto:** O operador registra duas pesagens: 15kg de vidro reciclável e 20kg de restos orgânicos.
+    
+- **Tarefas:**  
+  1. Inserir a primeira pesagem (vidro reciclável).  
+  2. Inserir a segunda pesagem (orgânicos).  
+  3. Verificar a classificação do sistema.
+     
+- **Critérios de Sucesso:**  
+  - Sistema classifica corretamente cada pesagem.  
+  - Usuário entende a diferença entre categorias.  
+
+---
+
+**Cenário 3 – Consulta de Relatórios**
+
+- **Objetivo:** Avaliar a clareza e rapidez na consulta de relatórios.
+  
+- **Contexto:** O gestor precisa ver o total de recicláveis coletados na última semana.
+  
+- **Tarefas:**  
+  1. Acessar o painel de relatórios.  
+  2. Selecionar o filtro de período (última semana).  
+  3. Visualizar os resultados.
+     
+- **Critérios de Sucesso:**  
+  - Relatório exibido em até 30s.  
+  - Usuário compreende gráficos e tabelas sem ajuda.  
+
+---
+
+**Cenário 4 – Tratamento de Erros**
+
+- **Objetivo:** Avaliar a experiência diante de erros de entrada.
+  
+- **Contexto:** O operador tenta inserir uma pesagem sem preencher o campo “peso”.
+  
+- **Tarefas:**  
+  1. Acessar cadastro de pesagem.  
+  2. Preencher material, mas deixar peso em branco.  
+  3. Enviar o registro.
+     
+- **Critérios de Sucesso:**  
+  - Sistema alerta que o campo é obrigatório.  
+  - Usuário corrige sem assistência externa.  
+
+---
+
+**Cenário 5 – Acessibilidade para Iniciantes**
+
+- **Objetivo:** Avaliar se iniciantes conseguem concluir tarefas.
+   
+- **Contexto:** Um novo operador precisa registrar uma pesagem de 10kg de papel reciclável.
+  
+- **Tarefas:**  
+  1. Entrar no sistema.  
+  2. Localizar a opção de cadastro.  
+  3. Registrar a pesagem de 10kg de papel.
+     
+- **Critérios de Sucesso:**  
+  - Usuário completa a tarefa em até 5 minutos.  
+  - Não solicita ajuda externa.  
+
+---
+
 
 ## Métodos de coleta de dados
 
-Os dados coletados devem ajudar a entender a experiência dos usuários e os dados podem ser coletados por observação direta incluindo métricas quantitativas (quantidade de cliques, número de erros, tempo gasto para cada tarefa etc.), métricas qualitativas (dificuldades, comentários etc.) e questionários pós-teste (A interface foi fácil de entender? Você encontrou dificuldades em alguma etapa? O que poderia ser melhorado?)
+Os métodos de coleta serão aplicados durante os testes de usabilidade da API e/ou dashboard conectado.  
+O objetivo é compreender **como os usuários interagem com o sistema**, identificar dificuldades e medir a eficiência no uso.
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+###  Observação Direta
+- Monitorar a execução das tarefas em tempo real.  
+- Registrar comportamentos, hesitações e momentos de dúvida do usuário.  
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+###  Métricas Quantitativas
+-  Tempo gasto para cada tarefa (ex: registrar pesagem, consultar relatório).  
+-  Número de cliques até a conclusão.  
+-  Quantidade de erros (ex: tentativa de envio com campo obrigatório vazio).  
+-  Número de vezes que o usuário precisou repetir uma ação.  
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+###  Métricas Qualitativas
+- Comentários espontâneos dos participantes.  
+- Dificuldades percebidas durante a navegação ou no entendimento das mensagens do sistema.  
+- Grau de clareza das classificações (reciclável x não reciclável).  
+
+###  Questionário Pós-Teste
+Após a execução, cada participante responderá perguntas como:  
+- A interface foi fácil de entender?  
+- Você encontrou dificuldades em alguma etapa do registro ou consulta?  
+- O feedback do sistema (mensagens de erro, confirmações) foi claro?  
+- O que poderia ser melhorado para facilitar o uso?  
+
+###  Considerações de Privacidade (LGPD)
+- Nenhum dado pessoal sensível será coletado.  
+- Participantes serão identificados apenas como **Usuário 1, Usuário 2, ...**.  
+- As métricas e respostas serão apresentadas de forma **anônima e agregada**, sem expor a identidade de ninguém.  
