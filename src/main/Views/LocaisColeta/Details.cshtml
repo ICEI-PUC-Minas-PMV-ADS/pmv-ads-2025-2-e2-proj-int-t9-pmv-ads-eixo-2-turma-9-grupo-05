@@ -1,0 +1,59 @@
+﻿@model EcoTrash.Models.LocalColeta
+
+@{
+    ViewData["Title"] = "Detalhes do Local de Coleta";
+}
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4 class="card-title mb-0">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                @Model.Cidade - @Model.Estado
+            </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Endereço</h5>
+                    <dl>
+                        <dt>Rua:</dt>
+                        <dd>@Model.Rua</dd>
+
+                        <dt>Número:</dt>
+                        <dd>@Model.Numero</dd>
+
+                        <dt>Bairro:</dt>
+                        <dd>@Model.Bairro</dd>
+
+                        <dt>Cidade:</dt>
+                        <dd>@Model.Cidade</dd>
+
+                        <dt>Estado:</dt>
+                        <dd>@Model.Estado</dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <h5>Informações Adicionais</h5>
+                    <dl>
+                        <dt>Endereço Completo:</dt>
+                        <dd>@Model.EnderecoCompleto()</dd>
+
+                        <dt>Data de Cadastro:</dt>
+                        <dd>@Model.DataCadastro.ToString("dd/MM/yyyy HH:mm")</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                <i class="fas fa-edit me-2"></i>Editar
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left me-2"></i>Voltar
+            </a>
+        </div>
+    </div>
+</div>

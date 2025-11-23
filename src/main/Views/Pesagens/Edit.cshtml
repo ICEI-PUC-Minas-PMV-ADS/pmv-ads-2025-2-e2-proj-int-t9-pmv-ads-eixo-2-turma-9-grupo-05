@@ -1,0 +1,47 @@
+﻿@model EcoTrash.Models.Pesagem
+
+@{
+    ViewData["Title"] = "Editar Pesagem";
+}
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="TipoMaterial" class="form-label"></label>
+                    <input asp-for="TipoMaterial" class="form-control" placeholder="Ex: Plástico, Papel, Metal, etc." />
+                    <span asp-validation-for="TipoMaterial" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Peso" class="form-label"></label>
+                    <input asp-for="Peso" class="form-control" type="number" step="0.01" placeholder="0.00" />
+                    <span asp-validation-for="Peso" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Localizacao" class="form-label"></label>
+                    <input asp-for="Localizacao" class="form-control" placeholder="Local onde foi coletado" />
+                    <span asp-validation-for="Localizacao" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-warning">Atualizar</button>
+                    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

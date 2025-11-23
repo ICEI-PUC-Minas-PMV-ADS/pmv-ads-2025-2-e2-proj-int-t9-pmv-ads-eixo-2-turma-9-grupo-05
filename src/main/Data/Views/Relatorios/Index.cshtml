@@ -1,0 +1,244 @@
+﻿@model EcoTrash.Controllers.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Relatórios e Analytics";
+}
+
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>
+            <i class="fas fa-chart-bar me-2"></i>@ViewData["Title"]
+        </h2>
+    </div>
+
+    <!-- Cards de Estatísticas -->
+    <div class="row mb-5">
+        <div class="col-md-3 mb-4">
+            <div class="card text-white bg-primary border-0 shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="card-title">Empresas</h6>
+                            <h3>@Model.TotalEmpresas</h3>
+                        </div>
+                        <i class="fas fa-building fa-2x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card text-white bg-success border-0 shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="card-title">Pesagens</h6>
+                            <h3>@Model.TotalPesagens</h3>
+                        </div>
+                        <i class="fas fa-weight fa-2x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card text-white bg-warning border-0 shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="card-title">Locais</h6>
+                            <h3>@Model.TotalLocais</h3>
+                        </div>
+                        <i class="fas fa-map-marker-alt fa-2x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card text-white bg-info border-0 shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="card-title">Materiais</h6>
+                            <h3>@Model.MateriaisMaisReciclados.Count</h3>
+                        </div>
+                        <i class="fas fa-recycle fa-2x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Relatórios Rápidos -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card shadow border-0">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-download me-2"></i>Exportar Relatórios
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-file-pdf fa-3x text-danger mb-3"></i>
+                                    <h5>Relatório de Pesagens (PDF)</h5>
+                                    <p class="text-muted">Exporte todas as pesagens em PDF</p>
+                                    <form asp-action="PesagensPdf" method="get" class="row g-2">
+                                        <div class="col-md-6">
+                                            <input type="date" name="dataInicio" class="form-control" placeholder="Data Início">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="date" name="dataFim" class="form-control" placeholder="Data Fim">
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-danger w-100">
+                                                <i class="fas fa-download me-2"></i>Baixar PDF
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-file-excel fa-3x text-success mb-3"></i>
+                                    <h5>Relatório de Pesagens (Excel)</h5>
+                                    <p class="text-muted">Exporte todas as pesagens em Excel</p>
+                                    <form asp-action="PesagensExcel" method="get" class="row g-2">
+                                        <div class="col-md-6">
+                                            <input type="date" name="dataInicio" class="form-control" placeholder="Data Início">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="date" name="dataFim" class="form-control" placeholder="Data Fim">
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-success w-100">
+                                                <i class="fas fa-download me-2"></i>Baixar Excel
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                                    <h5>Relatório de Empresas</h5>
+                                    <p class="text-muted">Lista completa de empresas cadastradas</p>
+                                    <a asp-action="EmpresasPdf" class="btn btn-primary w-100">
+                                        <i class="fas fa-download me-2"></i>Baixar PDF
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-chart-line fa-3x text-info mb-3"></i>
+                                    <h5>Dashboard Analítico</h5>
+                                    <p class="text-muted">Análises e gráficos detalhados</p>
+                                    <a asp-action="Analitico" class="btn btn-info w-100">
+                                        <i class="fas fa-chart-bar me-2"></i>Ver Analytics
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gráficos Simples -->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card shadow border-0">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-chart-line me-2"></i>Pesagens por Mês
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="pesagensChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card shadow border-0">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-recycle me-2"></i>Materiais Mais Reciclados
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="materiaisChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Gráfico de Pesagens por Mês
+        const pesagensCtx = document.getElementById('pesagensChart').getContext('2d');
+        new Chart(pesagensCtx, {
+            type: 'line',
+            data: {
+                labels: [@Html.Raw(string.Join(", ", Model.PesagensPorMes.Select(p => $"'{p.Mes}'")))],
+                datasets: [{
+                    label: 'Peso Total (kg)',
+                    data: [@string.Join(", ", Model.PesagensPorMes.Select(p => p.TotalPeso))],
+                    borderColor: '#0d6efd',
+                    backgroundColor: 'rgba(13, 110, 253, 0.1)',
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        });
+
+        // Gráfico de Materiais
+        const materiaisCtx = document.getElementById('materiaisChart').getContext('2d');
+        new Chart(materiaisCtx, {
+            type: 'doughnut',
+            data: {
+                labels: [@Html.Raw(string.Join(", ", Model.MateriaisMaisReciclados.Select(m => $"'{m.Material}'")))],
+                datasets: [{
+                    data: [@string.Join(", ", Model.MateriaisMaisReciclados.Select(m => m.Total))],
+                    backgroundColor: [
+                        '#0d6efd', '#198754', '#ffc107', '#dc3545', '#6f42c1'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+    </script>
+}

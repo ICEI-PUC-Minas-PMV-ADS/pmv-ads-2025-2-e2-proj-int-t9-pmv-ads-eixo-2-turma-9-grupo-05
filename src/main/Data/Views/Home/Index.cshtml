@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "EcoTrash - Página Inicial";
+}
+
+<div class="container">
+    <!-- Hero Section -->
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h1 class="display-4 text-success">
+                <i class="fas fa-recycle me-3"></i>EcoTrash
+            </h1>
+            <p class="lead">Sistema de gestão sustentável de resíduos</p>
+            <p class="text-muted">Transformando resíduos em oportunidades sustentáveis</p>
+        </div>
+    </div>
+
+    <!-- Cards de Estatísticas -->
+    <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+            <div class="card text-white bg-primary border-0 shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="card-title">Empresas</h4>
+                            <h2>@(ViewBag.TotalEmpresas ?? 0)</h2>
+                            <p class="card-text mb-0">Cadastradas no sistema</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-building fa-3x opacity-75"></i>
+                        </div>
+                    </div>
+                    <a href="/Empresas" class="btn btn-light btn-sm mt-3 w-100">Ver Todas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card text-white bg-success border-0 shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="card-title">Pesagens</h4>
+                            <h2>@(ViewBag.TotalPesagens ?? 0)</h2>
+                            <p class="card-text mb-0">Registros realizados</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-weight fa-3x opacity-75"></i>
+                        </div>
+                    </div>
+                    <a href="/Pesagens" class="btn btn-light btn-sm mt-3 w-100">Ver Todas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card text-white bg-warning border-0 shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="card-title">Locais de Coleta</h4>
+                            <h2>@(ViewBag.TotalLocais ?? 0)</h2>
+                            <p class="card-text mb-0">Pontos cadastrados</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-map-marker-alt fa-3x opacity-75"></i>
+                        </div>
+                    </div>
+                    <a href="/LocaisColeta" class="btn btn-light btn-sm mt-3 w-100">Ver Todos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Pesagens Recentes -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow border-0">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-weight me-2"></i>Pesagens Recentes
+                    </h5>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.PesagensRecentes != null && ViewBag.PesagensRecentes.Count > 0)
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Tipo de Material</th>
+                                        <th>Peso (kg)</th>
+                                        <th>Localização</th>
+                                        <th>Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var pesagem in ViewBag.PesagensRecentes)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <i class="fas fa-trash me-2 text-muted"></i>
+                                                @pesagem.TipoMaterial
+                                            </td>
+                                            <td><span class="badge bg-success">@pesagem.Peso kg</span></td>
+                                            <td>@pesagem.Localizacao</td>
+                                            <td class="text-muted small">@pesagem.DataCadastro.ToString("dd/MM/yyyy HH:mm")</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="/Pesagens" class="btn btn-success">
+                                <i class="fas fa-list me-2"></i>Ver Todas as Pesagens
+                            </a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-center py-5">
+                            <i class="fas fa-weight fa-4x text-muted mb-3"></i>
+                            <h5 class="text-muted">Nenhuma pesagem registrada</h5>
+                            <p class="text-muted mb-4">Comece registrando sua primeira pesagem de material</p>
+                            <a href="/Pesagens/Create" class="btn btn-success btn-lg">
+                                <i class="fas fa-plus me-2"></i>Registrar Primeira Pesagem
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ações Rápidas -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card shadow border-0">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-bolt me-2"></i>Ações Rápidas
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-md-3 mb-3">
+                            <a href="/Pesagens/Create" class="btn btn-outline-success btn-lg w-100 py-3 h-100 d-flex flex-column justify-content-center">
+                                <i class="fas fa-weight fa-2x mb-2"></i>
+                                <span>Nova Pesagem</span>
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <a href="/Empresas/Create" class="btn btn-outline-primary btn-lg w-100 py-3 h-100 d-flex flex-column justify-content-center">
+                                <i class="fas fa-building fa-2x mb-2"></i>
+                                <span>Nova Empresa</span>
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <a href="/LocaisColeta/Create" class="btn btn-outline-warning btn-lg w-100 py-3 h-100 d-flex flex-column justify-content-center">
+                                <i class="fas fa-map-marker-alt fa-2x mb-2"></i>
+                                <span>Novo Local</span>
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <a href="#" class="btn btn-outline-info btn-lg w-100 py-3 h-100 d-flex flex-column justify-content-center">
+                                <i class="fas fa-chart-bar fa-2x mb-2"></i>
+                                <span>Relatórios</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

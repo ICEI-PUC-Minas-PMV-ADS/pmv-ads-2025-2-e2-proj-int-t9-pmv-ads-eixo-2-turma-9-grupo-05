@@ -1,0 +1,165 @@
+﻿@model EcoTrash.Models.LocalColeta
+
+@{
+    ViewData["Title"] = "Cadastrar Local de Coleta";
+}
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Create" id="form-local">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="Estado" class="form-label"></label>
+                            <select asp-for="Estado" class="form-select" id="estado" required>
+                                <option value="">Selecione o Estado</option>
+                            </select>
+                            <span asp-validation-for="Estado" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="Cidade" class="form-label"></label>
+                            <select asp-for="Cidade" class="form-select" id="cidade" required disabled>
+                                <option value="">Selecione a Cidade</option>
+                            </select>
+                            <span asp-validation-for="Cidade" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Rua" class="form-label"></label>
+                    <input asp-for="Rua" class="form-control" placeholder="Nome da rua" />
+                    <span asp-validation-for="Rua" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="Numero" class="form-label"></label>
+                            <input asp-for="Numero" class="form-control" placeholder="Número" />
+                            <span asp-validation-for="Numero" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="Bairro" class="form-label"></label>
+                            <input asp-for="Bairro" class="form-control" placeholder="Bairro" />
+                            <span asp-validation-for="Bairro" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Prévia do Endereço</h5>
+                </div>
+                <div class="card-body">
+                    <p id="endereco-preview" class="text-muted">Preencha os campos para ver o endereço completo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const estadoSelect = document.getElementById('estado');
+            const cidadeSelect = document.getElementById('cidade');
+            const ruaInput = document.getElementById('Rua');
+            const numeroInput = document.getElementById('Numero');
+            const bairroInput = document.getElementById('Bairro');
+            const enderecoPreview = document.getElementById('endereco-preview');
+
+            // Carregar estados do IBGE
+            async function carregarEstados() {
+                try {
+                    const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome');
+                    const estados = await response.json();
+
+                    estados.forEach(estado => {
+                        const option = document.createElement('option');
+                        option.value = estado.sigla;
+                        option.textContent = `${estado.sigla} - ${estado.nome}`;
+                        estadoSelect.appendChild(option);
+                    });
+                } catch (error) {
+                    console.error('Erro ao carregar estados:', error);
+                }
+            }
+
+            // Carregar cidades baseado no estado selecionado
+            async function carregarCidades(uf) {
+                cidadeSelect.disabled = !uf;
+                cidadeSelect.innerHTML = '<option value="">Selecione a Cidade</option>';
+
+                if (!uf) return;
+
+                try {
+                    const response = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios`);
+                    const cidades = await response.json();
+
+                    cidades.forEach(cidade => {
+                        const option = document.createElement('option');
+                        option.value = cidade.nome;
+                        option.textContent = cidade.nome;
+                        cidadeSelect.appendChild(option);
+                    });
+
+                    cidadeSelect.disabled = false;
+                } catch (error) {
+                    console.error('Erro ao carregar cidades:', error);
+                }
+            }
+
+            // Atualizar preview do endereço
+            function atualizarPreview() {
+                const estado = estadoSelect.value;
+                const cidade = cidadeSelect.value;
+                const rua = ruaInput.value;
+                const numero = numeroInput.value;
+                const bairro = bairroInput.value;
+
+                if (rua && numero && bairro && cidade && estado) {
+                    enderecoPreview.textContent = `${rua}, ${numero} - ${bairro}, ${cidade} - ${estado}`;
+                } else {
+                    enderecoPreview.textContent = 'Preencha os campos para ver o endereço completo';
+                    enderecoPreview.className = 'text-muted';
+                }
+            }
+
+            // Event listeners
+            estadoSelect.addEventListener('change', function() {
+                carregarCidades(this.value);
+                atualizarPreview();
+            });
+
+            cidadeSelect.addEventListener('change', atualizarPreview);
+            ruaInput.addEventListener('input', atualizarPreview);
+            numeroInput.addEventListener('input', atualizarPreview);
+            bairroInput.addEventListener('input', atualizarPreview);
+
+            // Inicializar
+            carregarEstados();
+        });
+    </script>
+}

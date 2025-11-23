@@ -1,0 +1,34 @@
+﻿@model EcoTrash.Models.Pesagem
+
+@{
+    ViewData["Title"] = "Detalhes da Pesagem";
+}
+
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="card">
+        <div class="card-header">
+            <h4>Informações da Pesagem</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Tipo de Material:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.TipoMaterial)</dd>
+
+                <dt class="col-sm-3">Peso:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Peso) kg</dd>
+
+                <dt class="col-sm-3">Localização:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Localizacao)</dd>
+
+                <dt class="col-sm-3">Data de Cadastro:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.DataCadastro)</dd>
+            </dl>
+        </div>
+        <div class="card-footer">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+            <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
+        </div>
+    </div>
+</div>

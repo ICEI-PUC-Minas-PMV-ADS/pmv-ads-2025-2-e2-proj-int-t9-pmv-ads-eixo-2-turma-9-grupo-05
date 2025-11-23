@@ -1,0 +1,78 @@
+﻿@model IEnumerable<EcoTrash.Models.LocalColeta>
+
+@{
+    ViewData["Title"] = "Locais de Coleta";
+}
+
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>@ViewData["Title"]</h2>
+        <a asp-action="Create" class="btn btn-success">
+            <i class="fas fa-plus me-2"></i>Novo Local
+        </a>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle me-2"></i>
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (!Model.Any())
+    {
+        <div class="text-center py-5">
+            <i class="fas fa-map-marker-alt fa-4x text-muted mb-3"></i>
+            <h4 class="text-muted">Nenhum local de coleta cadastrado</h4>
+            <p class="text-muted">Comece cadastrando o primeiro local de coleta</p>
+            <a asp-action="Create" class="btn btn-success btn-lg">
+                <i class="fas fa-plus me-2"></i>Cadastrar Primeiro Local
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                @item.Cidade - @item.Estado
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <strong><i class="fas fa-road me-2"></i>Endereço:</strong>
+                                <p class="mb-1">@item.Rua, @item.Numero</p>
+                                <p class="mb-1">@item.Bairro</p>
+                                <p class="mb-0">@item.Cidade - @item.Estado</p>
+                            </div>
+                            <div class="mb-3">
+                                <strong><i class="fas fa-calendar me-2"></i>Cadastrado em:</strong>
+                                <p class="mb-0">@item.DataCadastro.ToString("dd/MM/yyyy")</p>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="btn-group w-100">
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
