@@ -39,15 +39,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| O sistema deve coletar automaticamente os dados de pesagem dos materiais em intervalos de tempo pré-definidos  | ALTA | 
 |RF-002| O sistema deve enviar os dados de pesagem coletados para o banco de dados SQL sempre que ocorrer atualização   | ALTA |
 |RF-003| A aplicação deve permitir que o usuário visualize um histórico das pesagens registradas | MÉDIA |
-|RF-004| A aplicação deve disponibilizar uma página que obtenha a localização atual do usuário (mediante permissão). | ALTA |
-|RF-005| A aplicação deve exibir os pontos de reciclagem mais próximos com base na localização do usuário. | ALTA |
+|RF-004| A aplicação deve disponibilizar cadastro de empresas e novos usuarios. | ALTA |
+|RF-005| A aplicaçao deve disponibilizar a exclusão de um ponto de coleta | MÉDIA |
 |RF-006| A aplicação deve permitir que o usuário filtre os pontos de reciclagem por tipo de material aceito (ex: plástico, vidro, papel, metal). | MÉDIA |
-|RF-007| O sistema deve gerar alertas/notificações quando um novo ponto de reciclagem for adicionado próximo à localização do usuário. | BAIXA |
+|RF-007| A aplicação deve disponibilizar detalhes da empresas cadastradas | BAIXA |
 |RF-008| A aplicação deve permitir que o usuário cadastre manualmente um novo ponto de reciclagem, informando dados como endereço, tipo de material aceito e horário de funcionamento. | MÉDIA |
 |RF-009| O sistema deve permitir a geração automática de relatórios consolidados de reciclagem em diferentes formatos (PDF, Excel) para facilitar a apresentação dos dados. | Alta |
 |RF-010| A aplicação deve disponibilizar métricas coletivas de reciclagem (ex: quantidade total reciclada pela comunidade/cidade). | MÉDIA |
-|RF-011| A aplicação deve permitir que o usuário receba notificações sobre campanhas e eventos de reciclagem promovidos por ONGs ou empresas parceiras. | BAIXA |
-|RF-012| O sistema deve oferecer ao usuário um guia interativo com informações sobre quais tipos de materiais podem ser reciclados e onde entregá-los. | MÉDIA |
+|RF-011| A aplicação deve mostar no maps para o usuario o ponto de coleta escolhido| BAIXA |
+|RF-012| A aplicação deve notificar o usuario quando um ponto de coleta novo é atribuido | MÉDIA |
 
 ### Requisitos não Funcionais
 
