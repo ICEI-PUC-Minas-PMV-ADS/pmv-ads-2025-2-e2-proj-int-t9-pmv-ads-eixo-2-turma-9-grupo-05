@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\GitHub\\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\\src\\main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{279A73E4-BB8B-19DF-65D5-50F906F6C8A1}|EcoTrash.csproj|c:\\users\\administrator\\documents\\github\\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\\src\\main\\data\\controllers\\empresascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{279A73E4-BB8B-19DF-65D5-50F906F6C8A1}|EcoTrash.csproj|solutionrelative:data\\controllers\\empresascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpresasController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\\src\\main\\Data\\Controllers\\EmpresasController.cs",
+              "RelativeDocumentMoniker": "Data\\Controllers\\EmpresasController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\\src\\main\\Data\\Controllers\\EmpresasController.cs",
+              "RelativeToolTip": "Data\\Controllers\\EmpresasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T19:29:17.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -677,3 +677,16 @@ C:\Users\Administrator\Desktop\EcoTrash\obj\Debug\net9.0\refint\EcoTrash.dll
 C:\Users\Administrator\Desktop\EcoTrash\obj\Debug\net9.0\EcoTrash.pdb
 C:\Users\Administrator\Desktop\EcoTrash\obj\Debug\net9.0\EcoTrash.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\EcoTrash\obj\Debug\net9.0\ref\EcoTrash.dll
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.RazorAssemblyInfo.cache
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.RazorAssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.sourcelink.json
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.dll
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\refint\EcoTrash.dll
+C:\Users\Administrator\Documents\GitHub\pmv-ads-2025-2-e2-proj-int-t9-pmv-ads-eixo-2-turma-9-grupo-05\src\main\obj\Debug\net9.0\EcoTrash.pdb
